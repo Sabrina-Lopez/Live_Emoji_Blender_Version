@@ -10,15 +10,16 @@
 
  ## Further Instructions :
  1. Open Blender 2.82.
- 2. Go to the Scripting tab of Blender if the Blender file does not open to there already.
- 3. Check that the OpenCVAnim.py and OpenCVAnimOperator.py files are present.
- 4. Update the landmark_path to in OpenCVAnimOperator.py to the location of the lbfmodel.yaml file in the project repo.
- 5. Reregister the OpenCVAnim.py and OpenCVAnimOperator.py files with the Register button. 
- 6. Run both scripts individually to ensure they do not have any errors.
- 7. Go to the Layout tab of Blender.
- 8. Click OpenCV Animation.
- 9. You can reposition the model to get closer to the face.
- 10. Click Capture.
+ 2. You may get a message about generate_customprops.py. Allow the generate_customprops.py file.
+ 3. Go to the Scripting tab of Blender if the Blender file does not open to there already.
+ 4. Check that the emoji_animation.py and emoji_animation_operator.py files are present.
+ 5. Update the facial_landmark_model_path to in emoji_animation_operator.py to the location of the lbfmodel.yaml file in the project repo.
+ 6. Reregister the emoji_animation.py and emoji_animation_operator.py files with the Register button. 
+ 7. Run both scripts individually to ensure they do not have any errors.
+ 8. Go to the Layout tab of Blender.
+ 9. Click Emoji Animation.
+ 10. You can reposition the model to get closer to the face.
+ 11. Click Capture.
 
  You should see a GUI presenting your camera footage with the facial landmark detection mesh as well as be able to move the model as you move your face.
 
