@@ -10,7 +10,7 @@ class OpenCVAnimOperator(bpy.types.Operator):
     
     # Set paths to trained models downloaded above
     face_detect_path = cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
-    landmark_model_path = "C:\\Users\Sabrina Lopez\\OneDrive\\Desktop\\UCF\\Classes\\Fall 2023 Classes\\Computer Graphics\\Project\control-3d-character-using-python-master\\data\\lbfmodel.yaml"
+    landmark_model_path = "C:\\Users\Sabrina Lopez\\OneDrive\\Desktop\\UCF\\Classes\\Fall 2023 Classes\\Computer Graphics\\Project\\control-3d-character-using-python-master\\data\\lbfmodel.yaml"
     
     # Load models
     fm = cv2.face.createFacemarkLBF()
