@@ -3,19 +3,10 @@ import bpy
 import time
 import numpy
 
-def registration():
-    bpy.utils.register_class(OpenCVAnimOperator)
-
-def unregistration():
-    bpy.utils.unregister_class(OpenCVAnimOperator)
-
-if __name__ == "__main__":
-    registration()
-
 class OpenCVAnimOperator(bpy.types.Operator):
     # Operator which runs its self from a timer
-    blender_idname = "wm.opencv_operator"
-    blender_label = "Emoji Animation Operator"
+    bl_idname = "wm.opencv_operator"
+    bl_label = "Emoji Animation Operator"
     
     # Set paths to trained models downloaded above
     facial_detection_path = cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
@@ -202,3 +193,11 @@ class OpenCVAnimOperator(bpy.types.Operator):
         self._cap.release()
         self._cap = None
 
+def registration():
+    bpy.utils.register_class(OpenCVAnimOperator)
+
+def unregistration():
+    bpy.utils.unregister_class(OpenCVAnimOperator)
+
+if __name__ == "__main__":
+    registration()
